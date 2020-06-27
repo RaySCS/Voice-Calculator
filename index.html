@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sound classification using SpeechCommands18w and p5.js</title>
+    <title>Speech Calculator</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
@@ -58,9 +58,8 @@
     <br>
     <h3>How it Works</h3>
     <div class="ridge">
-        <p><b>Machine Learning Sound Classifier</b></p>
-        <p><b>Overview: </b><br>A model is pre-trained with audio samples of different words such as numbers in this program.</p>
-        <p><b>How Does the Classifier Actually Work: </b> <br>In reality the processing of training the model on sound is very similar to image classification! You may be wondering that sound and images are two seperate data formats/things in general. Well, the idea is the same for there is still a Convolutional neural network, but instead of labeling images, audio is being labeled with an optimal confidence score. Here is where is gets super cool now, that audio is being labeled as an image, for a sample of audio is taken, say from 0 seconds to 5 seconds, and is represented in a spectrogram format - a visual representation of the various frequencies. Using that image we have now of the spectrogram, we can now classify it in a very similar manner to classifying images using a CNN which extracts different data to train our model to recognize the pattern of matching certain frequencies to specific words like the number one. </p>
+        <h4><b>Overview: </b><br>A model is pre-trained with audio samples of different words such as numbers in this program.</h4>
+        <h4><b>How Does the Classifier Actually Work: </b> <br>In reality the processing of training the model on sound is very similar to image classification! You may be wondering that sound and images are two seperate data formats/things in general. Well, the idea is the same for there is still a Convolutional neural network, but instead of labeling images, audio is being labeled with an optimal confidence score. Here is where is gets super cool now, that audio is being labeled as an image, for a sample of audio is taken, say from 0 seconds to 5 seconds, and is represented in a spectrogram format - a visual representation of the various frequencies. Using that image we have now of the spectrogram, we can now classify it in a very similar manner to classifying images using a CNN which extracts different data to train our model to recognize the pattern of matching certain frequencies to specific words like the number one. </h4>
         <div class="column__cell column__image column__right">
             <img src="img/soundclassifiervisual.png" />
         </div>
